@@ -22,8 +22,8 @@ wd = webdriver.Firefox(executable_path='/usr/local/bin/geckodriver',firefox_opti
 def login():
     loginUrl = 'https://www.zcom.asia/pc/index.php'
     wd.get(loginUrl)  # 进入登陆界面
-    wd.find_element_by_xpath('//*[@id="mobile"]').send_keys('15711057804')  # 输入用户名
-    wd.find_element_by_xpath('//*[@id="password"]').send_keys('WdcHss0123')  # 输入密码
+    wd.find_element_by_xpath('//*[@id="mobile"]').send_keys('*******')  # 输入用户名
+    wd.find_element_by_xpath('//*[@id="password"]').send_keys('******')  # 输入密码
     wd.find_element_by_xpath('/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/a').click()  # 点击登陆
     # wd.find_element_by_xpath('//*[@id="pl_login_form"]/div/div[3]/div[3]/div/input').send_keys(input("输入验证码： "))
     # wd.find_element_by_xpath('/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/a').click()#再次点击登陆
